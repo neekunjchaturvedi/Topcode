@@ -1,4 +1,4 @@
-import { Box, Flex, HStack } from "@chakra-ui/react";
+import { Box, Center, Flex, HStack } from "@chakra-ui/react";
 import React, { useRef, useState } from "react";
 import { Editor } from "@monaco-editor/react";
 import LanguageSelector from "./languageselector";
@@ -40,6 +40,10 @@ export const CodeEditor = () => {
         </Box>
         <Output editorRef={editorRef} language={lang} />
       </HStack>
+      <Box textAlign={"center"} mt={3}>
+        <i class="fa-solid fa-code" style={{ marginRight: "10px" }}></i>
+        Made by Neekunj Chaturvedi
+      </Box>
     </Box>
   );
 };
