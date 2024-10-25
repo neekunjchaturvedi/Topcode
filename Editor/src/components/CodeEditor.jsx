@@ -1,4 +1,4 @@
-import { Box, HStack } from "@chakra-ui/react";
+import { Box, Flex, HStack } from "@chakra-ui/react";
 import React, { useRef, useState } from "react";
 import { Editor } from "@monaco-editor/react";
 import LanguageSelector from "./languageselector";
@@ -21,6 +21,10 @@ export const CodeEditor = () => {
 
   return (
     <Box>
+      <Box fontSize={"3xl"}>
+        <i class="fa-solid fa-code" style={{ marginRight: "10px" }}></i>
+        TopCode
+      </Box>
       <HStack spacing={4}>
         <Box w={"50%"}>
           <LanguageSelector lang={lang} onSelect={onSelect} />
